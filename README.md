@@ -35,3 +35,34 @@ During this experiment venous occlusion is achieved by using a blood pressure cu
 ![Spectrophotometry](figures/plot_spectrophotometry.png)
 
 ![Residual analysis](figures/plot_residuals.png)
+
+## How to run
+### Requires
+- Git
+- Python 3 
+with the following packages:
+- numpy
+- matplotlib
+- scikit-learn
+- jupyter
+### Clone
+```sh
+git clone https://github.com/andan42/flapometer-data-analysis.git
+cd flapometer-data-analysis
+```
+### Create venv
+Linux
+```sh
+python -m venv .venv
+source .venv/bin/activate
+```
+Windows
+```sh
+python -m venv .venv .venv\Scripts\Activate.ps1
+```
+### Install packages
+```sh
+pip install numpy matplotlib scikit-learn jupyter
+```
+### Launch
+Either open project with VS Code or run ```sh jupyter notebook``` after activating venv.
