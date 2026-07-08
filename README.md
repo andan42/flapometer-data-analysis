@@ -26,3 +26,12 @@ The software was developed and implemented by me from the ground up, along with 
 - The overdetermined linear system $\mathbf{M}\mathbf{c}=\mathbf{A}$ (where $\mathbf{M}$ absorbance matrix, $\mathbf{c}$ unknown chromophore concentrations, $\mathbf{A}$ vector of measured absorbances.) gives the relationship between concentrations (vector $\mathbf{c}$) and attenuation coefficients (vector $\mathbf{A}$)
 - Find best fit solution of $\mathbf{M}\mathbf{c}=\mathbf{A}$ to approximate concentrations
 - Deviations from best fit concentrations are analyzed with PCA and ICA
+
+## Example output
+During this experiment venous occlusion is achieved by using a blood pressure cuff at low pressure for a few minutes. Note the increase in Deoxyhemolgobin concentration as Oxyhemoglobin decreases. The demo notebook also contains an example of arterial occlusion.
+
+![Data](figures/plot_absorbance.png)
+
+![Spectrophotometry](figures/plot_spectrophotometry.png)
+
+![Residual analysis](figures/plot_residuals.png)
