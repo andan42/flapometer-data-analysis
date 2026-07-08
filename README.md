@@ -2,7 +2,7 @@
 
 ## Overview
 
-This notebook demonstrates a spectrophotometric data analysis pipeline for data obtained using the **Flapometer device, a prototype spectrophotometric device** designed for continuous monitoring of tissue perfusion. The device sensors consist of 9 LEDs of different wavelengths in visible and infrared light and 4 Photodiodes. Example data are provided in the repo. Click here for notebook: **[flapometer_analysis_demo.ipynb](spectrophotometry/flapometer_analysis_demo.ipynb)**
+This notebook demonstrates a spectrophotometric data analysis pipeline for data obtained using the **Flapometer device, a prototype optical device** for continuous monitoring of tissue perfusion. The device sensors consist of 9 LEDs of different wavelengths and 4 Photodiodes. Because oxygenated and deoxygenated hemoglobin have different absorbtion characteristics, the measurements can be used to estimate tissue perfusion. Example data are provided in the repo. Click here for notebook: **[flapometer_analysis_demo.ipynb](spectrophotometry/flapometer_analysis_demo.ipynb)**
 
 ## Data acquisition software
 
