@@ -1,0 +1,28 @@
+# Flapometer Analysis Demo
+
+## Overview
+
+This notebook demonstrates a spectrophotometric data analysis pipeline for data obtained using the Flapometer device, a prototype spectrophotometric device designed for continuous monitoring of tissue perfusion.
+
+## Data acquisition software
+
+The data acquisition software is available here: https://github.com/andan42/flapometer-data-acquisition Hardware design (schematics and boards) not yet available.
+
+## Author
+
+The software was developed and implemented by me from the ground up, along with the hardware and data acquisition software, as part of my M.D. thesis at the University of Medicine and Pharmacy "Carol Davila", Bucharest.
+
+## Info
+
+- Two example recordings are included, one is anonymized, the other is me.
+- Plots at the end!
+- PCA and ICA analysis are used with the intent of further refining the model
+- Parameters of the pipeline can be changed in the notebook. See each section for details.
+
+## Basic principles
+- Each of the 18 data channels contains intensity recordings of tissue transmitted light in 9 different wavelengths (550nm - 950nm).
+- Light intensities are referenced to a baseline established at the beginning of the recording.
+- According to Beer-Lambert law (I = I<sub>0</sub>e<sup>-ax</sup> where I - intensity, a - attenuation coefficient, x - distance) absorbance can be computed as logarithm of measured intensity.
+- The overdetermined linear system $\mathbf{M}\mathbf{c}=\mathbf{A}$ (where $\mathbf{M}$ absorbance matrix, $\mathbf{c}$ unknown chromophore concentrations, $\mathbf{A}$ vector of measured absorbances.) gives the relationship between concentrations (vector $\mathbf{c}$) and attenuation coefficients (vector $\mathbf{A}$)
+- Find best fit solution of $\mathbf{M}\mathbf{c}=\mathbf{A}$ to approximate concentrations
+- Deviations from best fit concentrations are analyzed with PCA and ICA
